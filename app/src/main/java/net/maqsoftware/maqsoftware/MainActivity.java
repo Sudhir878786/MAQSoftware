@@ -1,4 +1,4 @@
-package net.penguincoders.penguincoders;
+package net.maqsoftware.maqsoftware;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         webView.setWebViewClient(client);
         webView.getSettings().setJavaScriptEnabled(true);
 
-        webView.loadUrl("https://www.penguincoders.net");
+        webView.loadUrl("https://testmaq.sharepoint.com/myspace/Pages/MySpace.aspx#");
     }
 
     @Override

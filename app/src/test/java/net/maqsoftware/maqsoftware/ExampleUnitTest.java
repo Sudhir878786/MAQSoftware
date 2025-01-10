@@ -1,4 +1,4 @@
-package net.penguincoders.penguincoders;
+package net.maqsoftware.maqsoftware;
 
 import org.junit.Test;
 
