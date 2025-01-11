@@ -91,8 +91,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         BiometricPrompt.PromptInfo promptInfo = new BiometricPrompt.PromptInfo.Builder()
-                .setTitle("Biometric Authentication")
-                .setSubtitle("Authenticate to access the WebView")
+                .setTitle("Frictionless Authentication ⚡🔓")
+                .setSubtitle("Hmm! Are You MAQian? 🤔")
                 .setNegativeButtonText("Cancel")
                 .build();
 

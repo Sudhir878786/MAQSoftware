@@ -1,3 +1,0 @@
-net.maqsoftware.maqsoftware.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme

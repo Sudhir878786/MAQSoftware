@@ -1,4 +1,0 @@
-net/maqsoftware/maqsoftware/test/BuildConfig.java
- net.maqsoftware.maqsoftware.test.BuildConfig
-net/maqsoftware/maqsoftware/ExampleInstrumentedTest.java
- net.maqsoftware.maqsoftware.ExampleInstrumentedTest
