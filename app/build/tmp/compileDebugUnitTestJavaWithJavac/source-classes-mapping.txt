@@ -1,0 +1,2 @@
+net/maqsoftware/maqsoftware/ExampleUnitTest.java
+ net.maqsoftware.maqsoftware.ExampleUnitTest
