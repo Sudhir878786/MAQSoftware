@@ -4,7 +4,7 @@
 [![Kotlin](https://img.shields.io/badge/java-1.9-blue.svg)](https://www.java.com/en/)
 [![Android](https://img.shields.io/badge/Android-API%2033%2B-green.svg)](https://developer.android.com/about/versions/13)
 
-> **Note**: Replace the badges above with the appropriate ones for your project. You can find more badges at [shields.io](https://shields.io/).
+
 
 ## Overview
 This Android application provides **MAQ employees** with instant access to their `My Space` information, directly from their mobile devices. View your attendance, training courses, reports, and other essential data quickly and easily.  `Your Space at your hand.`
