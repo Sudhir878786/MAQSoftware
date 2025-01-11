@@ -1,82 +1,82 @@
 [
     {
-        "merged": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "net.maqsoftware.maqsoftware.app-merged_res-4:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "net.maqsoftware.maqsoftware.app-main-6:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "net.maqsoftware.maqsoftware.app-merged_res-4:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "net.maqsoftware.maqsoftware.app-main-6:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "net.maqsoftware.maqsoftware.app-merged_res-4:/layout_activity_main.xml.flat",
+        "source": "net.maqsoftware.maqsoftware.app-main-6:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
-        "source": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.webp"
+        "merged": "net.maqsoftware.maqsoftware.app-merged_res-4:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "net.maqsoftware.maqsoftware.app-main-6:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "net.maqsoftware.maqsoftware.app-merged_res-4:/drawable_ic_launcher_background.xml.flat",
+        "source": "net.maqsoftware.maqsoftware.app-main-6:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+        "merged": "net.maqsoftware.maqsoftware.app-merged_res-4:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "net.maqsoftware.maqsoftware.app-main-6:/mipmap-xxhdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "net.maqsoftware.maqsoftware.app-merged_res-4:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "net.maqsoftware.maqsoftware.app-main-6:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "net.maqsoftware.maqsoftware.app-merged_res-4:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "net.maqsoftware.maqsoftware.app-pngs-0:/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "net.maqsoftware.maqsoftware.app-merged_res-4:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "net.maqsoftware.maqsoftware.app-main-6:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "net.maqsoftware.maqsoftware.app-merged_res-4:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "net.maqsoftware.maqsoftware.app-main-6:/mipmap-xhdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "net.maqsoftware.maqsoftware.app-merged_res-4:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "net.maqsoftware.maqsoftware.app-main-6:/mipmap-mdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "net.maqsoftware.maqsoftware.app-merged_res-4:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "net.maqsoftware.maqsoftware.app-main-6:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "net.maqsoftware.maqsoftware.app-merged_res-4:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "net.maqsoftware.maqsoftware.app-main-6:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.webp"
+        "merged": "net.maqsoftware.maqsoftware.app-merged_res-4:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "net.maqsoftware.maqsoftware.app-main-6:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.webp"
+        "merged": "net.maqsoftware.maqsoftware.app-merged_res-4:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "net.maqsoftware.maqsoftware.app-main-6:/mipmap-hdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
-        "source": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.webp"
+        "merged": "net.maqsoftware.maqsoftware.app-merged_res-4:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "net.maqsoftware.maqsoftware.app-main-6:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "net.maqsoftware.maqsoftware.app-merged_res-4:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "net.maqsoftware.maqsoftware.app-main-6:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "net.maqsoftware.maqsoftware.app-merged_res-4:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "net.maqsoftware.maqsoftware.app-main-6:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "net.maqsoftware.maqsoftware.app-merged_res-4:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "net.maqsoftware.maqsoftware.app-main-6:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_foreground.webp.flat",
-        "source": "C:\\Users\\SUDHIR SHARMA\\Videos\\MAQ Software\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.webp"
+        "merged": "net.maqsoftware.maqsoftware.app-merged_res-4:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "net.maqsoftware.maqsoftware.app-main-6:/mipmap-mdpi/ic_launcher_round.webp"
     }
 ]
