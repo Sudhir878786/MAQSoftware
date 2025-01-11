@@ -70,14 +70,16 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\SU
 		ADDED from C:\Users\SUDHIR SHARMA\Videos\MAQ Software\app\src\main\AndroidManifest.xml:12:9-40
 activity#net.maqsoftware.maqsoftware.MainActivity
 ADDED from C:\Users\SUDHIR SHARMA\Videos\MAQ Software\app\src\main\AndroidManifest.xml:13:9-19:20
+	android:exported
+		ADDED from C:\Users\SUDHIR SHARMA\Videos\MAQ Software\app\src\main\AndroidManifest.xml:14:13-36
 	android:name
 		ADDED from C:\Users\SUDHIR SHARMA\Videos\MAQ Software\app\src\main\AndroidManifest.xml:13:19-74
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\SUDHIR SHARMA\Videos\MAQ Software\app\src\main\AndroidManifest.xml:14:13-18:29
+ADDED from C:\Users\SUDHIR SHARMA\Videos\MAQ Software\app\src\main\AndroidManifest.xml:15:13-18:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\SUDHIR SHARMA\Videos\MAQ Software\app\src\main\AndroidManifest.xml:15:17-69
+ADDED from C:\Users\SUDHIR SHARMA\Videos\MAQ Software\app\src\main\AndroidManifest.xml:16:17-69
 	android:name
-		ADDED from C:\Users\SUDHIR SHARMA\Videos\MAQ Software\app\src\main\AndroidManifest.xml:15:25-66
+		ADDED from C:\Users\SUDHIR SHARMA\Videos\MAQ Software\app\src\main\AndroidManifest.xml:16:25-66
 category#android.intent.category.LAUNCHER
 ADDED from C:\Users\SUDHIR SHARMA\Videos\MAQ Software\app\src\main\AndroidManifest.xml:17:17-77
 	android:name
