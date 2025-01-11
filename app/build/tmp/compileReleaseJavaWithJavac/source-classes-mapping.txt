@@ -1,0 +1,5 @@
+net/maqsoftware/maqsoftware/MainActivity.java
+ net.maqsoftware.maqsoftware.CustomWebViewClient
+ net.maqsoftware.maqsoftware.MainActivity
+net/maqsoftware/maqsoftware/BuildConfig.java
+ net.maqsoftware.maqsoftware.BuildConfig
