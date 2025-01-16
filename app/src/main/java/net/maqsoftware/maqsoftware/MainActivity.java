@@ -14,7 +14,9 @@ import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import com.airbnb.lottie.LottieAnimationView;
-
+import android.content.Intent;
+import android.net.Uri;
+import android.widget.Button;
 
 import java.util.concurrent.Executor;
 public class MainActivity extends AppCompatActivity {
@@ -39,6 +41,15 @@ public class MainActivity extends AppCompatActivity {
 
         // Authenticate the user before loading the webpage
         authenticateUser();
+
+        // Initialize Contact button and set click listener
+        Button contactButton = findViewById(R.id.contactButton);
+        contactButton.setOnClickListener(view -> {
+            // Open LinkedIn in a browser
+            String linkedInUrl = "https://www.linkedin.com/in/sudhirsharma87/";  // Replace with your LinkedIn profile URL
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(linkedInUrl));
+            startActivity(intent);
+        });
     }
 
     @Override
