@@ -5,6 +5,7 @@ import androidx.biometric.BiometricManager;
 import androidx.biometric.BiometricPrompt;
 import androidx.core.content.ContextCompat;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 import android.view.View;
 import android.app.Activity;
 import android.os.Bundle;
@@ -12,7 +13,9 @@ import android.view.KeyEvent;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Toast;
+import android.content.Intent;
+import android.net.Uri;
+import android.widget.Button;
 
 
 import java.util.concurrent.Executor;
@@ -36,6 +39,14 @@ public class MainActivity extends AppCompatActivity {
 
         // Authenticate the user before loading the webpage
         authenticateUser();
+
+        // Initialize Contact Button
+        Button contactButton = findViewById(R.id.contactButton);
+        contactButton.setOnClickListener(v -> {
+            String linkedInUrl = "https://www.linkedin.com/in/sudhirsharma87/";
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(linkedInUrl));
+            startActivity(intent);
+        });
     }
 
     @Override
@@ -95,7 +106,6 @@ public class MainActivity extends AppCompatActivity {
         biometricPrompt.authenticate(promptInfo);
     }
 }
-
 class CustomWebViewClient extends WebViewClient {
     private RelativeLayout loadingOverlay;
 
@@ -125,3 +135,4 @@ class CustomWebViewClient extends WebViewClient {
         return false;
     }
 }
+

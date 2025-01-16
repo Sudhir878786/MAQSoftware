@@ -26,4 +26,18 @@
             android:layout_centerInParent="true" />
     </RelativeLayout>
 
+    <!-- Contact button at the bottom-right -->
+    <Button
+        android:id="@+id/contactButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="9dp"
+        android:backgroundTint="#6200EE"
+        android:text="Contact"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp" />
 </RelativeLayout>
