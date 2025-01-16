@@ -13,9 +13,7 @@ import android.view.KeyEvent;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.content.Intent;
-import android.net.Uri;
-import android.widget.Button;
+import com.airbnb.lottie.LottieAnimationView;
 
 
 import java.util.concurrent.Executor;
@@ -23,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     private WebView webView;
     private RelativeLayout loadingOverlay;
+    private LottieAnimationView lottieAnimationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,21 +31,14 @@ public class MainActivity extends AppCompatActivity {
         // Initialize WebView and Loading Overlay
         webView = findViewById(R.id.webView);
         loadingOverlay = findViewById(R.id.loadingOverlay);
+        lottieAnimationView = findViewById(R.id.lottieAnimationView);
 
-        CustomWebViewClient client = new CustomWebViewClient(this, loadingOverlay);
+        CustomWebViewClient client = new CustomWebViewClient(this, loadingOverlay, lottieAnimationView);
         webView.setWebViewClient(client);
         webView.getSettings().setJavaScriptEnabled(true);
 
         // Authenticate the user before loading the webpage
         authenticateUser();
-
-        // Initialize Contact Button
-        Button contactButton = findViewById(R.id.contactButton);
-        contactButton.setOnClickListener(v -> {
-            String linkedInUrl = "https://www.linkedin.com/in/sudhirsharma87/";
-            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(linkedInUrl));
-            startActivity(intent);
-        });
     }
 
     @Override
@@ -106,23 +98,28 @@ public class MainActivity extends AppCompatActivity {
         biometricPrompt.authenticate(promptInfo);
     }
 }
+
 class CustomWebViewClient extends WebViewClient {
     private RelativeLayout loadingOverlay;
+    private LottieAnimationView lottieAnimationView;
 
-    public CustomWebViewClient(Activity activity, RelativeLayout loadingOverlay) {
+    public CustomWebViewClient(Activity activity, RelativeLayout loadingOverlay, LottieAnimationView lottieAnimationView) {
         this.loadingOverlay = loadingOverlay;
+        this.lottieAnimationView = lottieAnimationView;
     }
 
     @Override
     public void onPageStarted(WebView view, String url, android.graphics.Bitmap favicon) {
         super.onPageStarted(view, url, favicon);
         loadingOverlay.setVisibility(View.VISIBLE); // Show the loader
+        lottieAnimationView.playAnimation(); // Play the animation
     }
 
     @Override
     public void onPageFinished(WebView view, String url) {
         super.onPageFinished(view, url);
         loadingOverlay.setVisibility(View.GONE); // Hide the loader
+        lottieAnimationView.cancelAnimation(); // Stop the animation
     }
 
     @Override
@@ -135,4 +132,3 @@ class CustomWebViewClient extends WebViewClient {
         return false;
     }
 }
-
