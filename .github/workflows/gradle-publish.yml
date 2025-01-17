@@ -16,15 +16,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Step 1: Checkout code
       - name: Checkout code
         uses: actions/checkout@v3
 
+      # Step 2: Set up JDK (required for building Android apps)
       - name: Set up JDK
         uses: actions/setup-java@v3
         with:
           distribution: 'zulu'
           java-version: '11'
 
+      # Step 3: Cache Gradle dependencies (optional but speeds up builds)
       - name: Cache Gradle dependencies
         uses: actions/cache@v3
         with:
@@ -35,11 +38,31 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gradle-
 
-      - name: Build APK
-        run: ./gradlew assembleDebug
+      # Step 4: Set up Android SDK
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v2
+        with:
+          sdk-version: 'commandlinetools-linux-8512546_latest'
+          ndk-version: '21.3.6528147' # specify your required NDK version if necessary
 
+      # Step 5: Install dependencies (including the Android SDK dependencies)
+      - name: Install Dependencies
+        run: ./gradlew dependencies
+
+      # Step 6: Build APK
+        run: ./gradlew assembleRelease  # You can use 'assembleDebug' for debug builds
+
+      # Step 7: Upload APK (for distribution or further use)
       - name: Upload APK
         uses: actions/upload-artifact@v3
         with:
           name: maqsoftware.apk
-          path: app/build/outputs/apk/debug/app-debug.apk
+          path: app/build/outputs/apk/release/app-release.apk  # Path to your APK file
+
+      # Optional: Step 8: If you want to sign the APK (only for release builds)
+      - name: Sign APK
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule
+        run: |
+          keytool -genkey -v -keystore ./my-release-key.keystore -keyalg RSA -keysize 2048 -validity 10000 -storepass ${{ secrets.KEYSTORE_PASSWORD }} -keypass ${{ secrets.KEY_PASSWORD }} -dname "CN=MyApp, OU=Dev, O=Company, L=City, S=State, C=Country"
+          ./gradlew assembleRelease -Psigning.keyAlias=${{ secrets.KEY_ALIAS }} -Psigning.keyPassword=${{ secrets.KEY_PASSWORD }} -Psigning.storeFile=./my-release-key.keystore -Psigning.storePassword=${{ secrets.KEYSTORE_PASSWORD }}
+
