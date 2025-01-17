@@ -3,8 +3,7 @@
 name: Maven Package
 
 on:
-  schedule:
-    - cron: '0 0 * * *'  # This triggers the workflow every day at midnight UTC
+  workflow_dispatch:
 
 jobs:
   build:
