@@ -13,5 +13,5 @@ This Android application provides **MAQ employees** with instant access to their
 
 Updating soon...
 
-Till Now Download the latest apk file [Download the App](https://github.com/Sudhir878786/MAQSoftware/blob/Sudhir/app/release/app-release.apk?raw=true)
+Till Now Download the latest apk file [![Download maqsoftware.apk](https://img.shields.io/badge/Download-APK-blue)](https://raw.githubusercontent.com/Sudhir878786/MAQSoftware/blob/Sudhir/app/release/app-release.apk)
 
