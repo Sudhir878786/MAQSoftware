@@ -14,11 +14,11 @@ This APK has been **certified** and is **safe to install** on any device accordi
 
 - **VirusTotal**: The APK has been scanned by [VirusTotal](https://www.virustotal.com) using over 70 antivirus engines, and the results indicate that the APK is clean and secure.
 
-    - **VirusTotal Scan Report**: [View VirusTotal Results](https://www.virustotal.com/gui/file/0ebd73b48fc0b767e21199d66b37013526e87d2638dcdd5ca01efc2d74fbcc85/)
+    - **VirusTotal Scan Report**: [![VirusTotal Scan Result](https://img.shields.io/badge/Scan%20Report-green?style=flat&logo=virus)](https://www.virustotal.com/gui/file/0ebd73b48fc0b767e21199d66b37013526e87d2638dcdd5ca01efc2d74fbcc85/)
 
 - **MetaDefender**: Additionally, the APK has been verified by [MetaDefender](https://www.metadefender.com/), further confirming that it does not contain any harmful elements.
 
-    - **MetaDefender Scan Report**: [View MetaDefender Results](https://metadefender.com/results/file/bzI1MDExOEdmZHdVd0NyVkxpTXlzckJpc1I)
+    - **MetaDefender Scan Report**: [![MetaDefender Scan Result](https://img.shields.io/badge/Scan%20Report-orange?style=flat&logo=shield)](https://metadefender.com/results/file/bzI1MDExOEdmZHdVd0NyVkxpTXlzckJpc1I)
 
 Updating soon...
 
