@@ -4,10 +4,12 @@ name: Maven Package
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - v35  # Only trigger the workflow for the v35 branch
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -15,18 +17,21 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+      with:
+        ref: v35  # Check out the v35 branch
+
     - name: Set up JDK 21
       uses: actions/setup-java@v4
       with:
         java-version: '21'
         distribution: 'temurin'
-        server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
-        settings-path: ${{ github.workspace }} # location for the settings.xml file
+        server-id: github
+        settings-path: ${{ github.workspace }}/.github/maven  # Path to settings.xml for v35 branch
 
     - name: Build with Maven
       run: mvn -B package --file maqsoftware-app/pom.xml
 
     - name: Publish to GitHub Packages Apache Maven
-      run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml --file maqsoftware-app/pom.xml
+      run: mvn deploy -s ${{ github.workspace }}/.github/maven/settings.xml --file maqsoftware-app/pom.xml
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
