@@ -33,4 +33,11 @@
         </plugins>
     </build>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/Sudhir878786/MAQSoftware</url> 
+        </repository>
+    </distributionManagement>
+
 </project>
