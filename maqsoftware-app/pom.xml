@@ -10,12 +10,11 @@
     <name>maqsoftware-app</name>
     <url>http://maven.apache.org</url>
 
-    <dependencies>
+    dependencies>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>test</scope>
+            <groupId>net.maqsoftware</groupId>
+            <artifactId>maqsoftware-app</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
