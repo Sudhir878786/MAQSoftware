@@ -17,49 +17,54 @@
 # For more samples to get started with GitHub Action workflows to deploy to Azure: https://github.com/Azure/actions-workflow-samples/tree/master/FunctionApp
 
 name: maqsoftwareazure
-
 on:
   schedule:
-    - cron: '0 0 * * *'  # Trigger every day at midnight (adjust as needed)
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 env:
-  AZURE_FUNCTIONAPP_NAME: 'maqsoftware'   # Replace with your Azure function app name
-  POM_XML_DIRECTORY: 'maqsoftware-app'                     # Set this to the directory that contains your pom.xml (adjust as needed)
-  DISTRIBUTION: 'microsoft'                       # Set this to the Java version distribution to use (e.g. 'zulu', 'temurin', 'microsoft')
-  JAVA_VERSION: '21'                         # Set this to the Java version to use (e.g. '8', '11', '17')
+  AZURE_FUNCTIONAPP_NAME: 'maqsoftware'   # Set this to your function app name on Azure
+  POM_XML_DIRECTORY: 'maqsoftware-app'    # Set this to the directory containing pom.xml file
+  DISTRIBUTION: 'microsoft'                # Set this to the Java version to use (e.g., 'zulu', 'temurin', 'microsoft')
+  JAVA_VERSION: '21'                      # Set this to the Java version to use (e.g., '8', '11', '17')
 
 jobs:
   build-and-deploy:
     runs-on: windows-latest  # For Linux, use ubuntu-latest
     environment: dev
+
     steps:
-      # Step 1: Checkout the repository
-      - name: 'Checkout GitHub Action'
-        uses: actions/checkout@v4
+    - name: 'Checkout GitHub Action'
+      uses: actions/checkout@v4
 
-      # Step 2: Setup Java SDK
-      - name: Setup Java SDK ${{ env.JAVA_VERSION }}
-        uses: actions/setup-java@v4
-        with:
-          distribution: ${{ env.DISTRIBUTION }}
-          java-version: ${{ env.JAVA_VERSION }}
+    - name: Setup Java SDK ${{ env.JAVA_VERSION }}
+      uses: actions/setup-java@v4
+      with:
+        distribution: ${{ env.DISTRIBUTION }}
+        java-version: ${{ env.JAVA_VERSION }}
 
-      # Step 3: Restore project dependencies using Maven
-      - name: 'Restore Project Dependencies Using Mvn'
-        shell: pwsh  # For Linux, use bash
-        run: |
-          pushd '${{ env.POM_XML_DIRECTORY }}'  # Navigate to the directory containing pom.xml
-          mvn clean package  # Build the project
-          popd  # Go back to the original directory
+    - name: 'Restore Project Dependencies Using Mvn'
+      shell: pwsh  # For Linux, use bash
+      run: |
+        pushd './${{ env.POM_XML_DIRECTORY }}'
+        mvn clean package
+        popd
 
-      # Step 4: Deploy to Azure Function App
-      - name: 'Run Azure Functions Action'
-        uses: Azure/functions-action@v1
-        id: fa
-        with:
-          app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}
-          package: '${{ env.POM_XML_DIRECTORY }}/target/azure-functions'  # Adjust the path based on your function app location
-          publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}  # Use this if using publish-profile method
-          respect-pom-xml: true  # Ensure the deployment respects the pom.xml configurations
-
+    - name: 'Run Azure Functions Action'
+      uses: Azure/functions-action@v1
+      id: fa
+      with:
+        app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}
+        package: '${{ env.POM_XML_DIRECTORY }}/target/azure-functions'  
+        respect-pom-xml: true
+        respect-funcignore: false
+        scm-do-build-during-deployment: false
+        enable-oryx-build: false
+        remote-build: false
+      env:
+        AZURE_FUNCTIONAPP_NAME: ${{ env.AZURE_FUNCTIONAPP_NAME }}
+        POM_XML_DIRECTORY: ${{ env.POM_XML_DIRECTORY }}
+        DISTRIBUTION: ${{ env.DISTRIBUTION }}
+        JAVA_VERSION: ${{ env.JAVA_VERSION }}
+        JAVA_HOME: C:\hostedtoolcache\windows\Java_Microsoft_jdk\21.0.2\x64
+        JAVA_HOME_21_X64: C:\hostedtoolcache\windows\Java_Microsoft_jdk\21.0.2\x64
