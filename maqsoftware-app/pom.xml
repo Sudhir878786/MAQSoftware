@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
@@ -16,6 +17,7 @@
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
+        <!-- Add other dependencies required for your Azure Function app here -->
     </dependencies>
 
     <build>
@@ -25,20 +27,22 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.1</version>
                 <configuration>
-                    <source>8</source>
-                    <target>8</target>
+                    <source>21</source>
+                    <target>21</target>
                 </configuration>
             </plugin>
-            <!-- Azure Functions Maven Plugin for deployment -->
+
             <plugin>
                 <groupId>com.microsoft.azure</groupId>
                 <artifactId>azure-functions-maven-plugin</artifactId>
-                <version>1.12.0</version>
-                <configuration>
-                    <resourceGroup>your-resource-group</resourceGroup>
-                    <appName>${env.AZURE_FUNCTIONAPP_NAME}</appName>
-                    <region>your-region</region>
-                </configuration>
+                <version>1.13.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>package</goal> 
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
@@ -46,7 +50,7 @@
     <distributionManagement>
         <repository>
             <id>github</id>
-            <url>https://maven.pkg.github.com/Sudhir878786/MAQSoftware</url> 
+            <url>https://maven.pkg.github.com/Sudhir878786/MAQSoftware</url>
         </repository>
     </distributionManagement>
 
