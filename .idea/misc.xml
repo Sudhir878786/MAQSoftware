@@ -1,4 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ProjectResources">
+    <resource url="http://maven.apache.org/xsd/maven-4.0.0.xsd" location="$USER_HOME$/Downloads/maven-4.0.0.xsd" />
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="liberica-17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

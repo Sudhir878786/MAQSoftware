@@ -1,0 +1,88 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<modelVersion>4.0.0</modelVersion>
+
+    <groupId>net.maqsoftware</groupId>
+    <artifactId>maqsoftware</artifactId>
+    <version>1.0</version>
+    <packaging>apk</packaging>
+
+    <name>MAQ Software</name>
+    <description>Android application for MAQ Software</description>
+    <url>http://example.com</url>
+
+    <properties>
+        <android.compileSdkVersion>33</android.compileSdkVersion>
+        <android.minSdkVersion>23</android.minSdkVersion>
+        <android.targetSdkVersion>33</android.targetSdkVersion>
+    </properties>
+
+    <dependencies>
+        <!-- Local JAR dependencies -->
+        <dependency>
+            <groupId>libs</groupId>
+            <artifactId>local-jar</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/*.jar</systemPath>
+        </dependency>
+
+        <!-- Android dependencies -->
+        <dependency>
+            <groupId>androidx.appcompat</groupId>
+            <artifactId>appcompat</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.android.material</groupId>
+            <artifactId>material</artifactId>
+            <version>1.8.0</version>
+        </dependency>
+        <dependency>
+            <groupId>androidx.constraintlayout</groupId>
+            <artifactId>constraintlayout</artifactId>
+            <version>1.1.3</version>
+        </dependency>
+        <dependency>
+            <groupId>androidx.biometric</groupId>
+            <artifactId>biometric</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.airbnb.android</groupId>
+            <artifactId>lottie</artifactId>
+            <version>5.2.0</version>
+        </dependency>
+
+        <!-- Test dependencies -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>androidx.test.espresso</groupId>
+            <artifactId>espresso-core</artifactId>
+            <version>3.5.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>androidx.test.ext</groupId>
+            <artifactId>junit</artifactId>
+            <version>1.1.5</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.simpligility.maven.plugins</groupId>
+                <artifactId>android-maven-plugin</artifactId>
+                <version>4.6.0</version>
+            </plugin>
+        </plugins>
+    </build>
+</project>
