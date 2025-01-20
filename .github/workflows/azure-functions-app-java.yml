@@ -21,8 +21,7 @@ name: Deploy Java project to Azure Function App
 
 
 on:
-  schedule:
-    - cron: '0 0 * * *'
+
   workflow_dispatch:
 
 env:
